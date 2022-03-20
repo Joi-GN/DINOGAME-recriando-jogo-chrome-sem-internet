@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background-color: #fafafa;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.darkmode{
+    background-color: #141414;
+    color: #fafafa;
+}
+
+nav{
+    display: flex;
+    font-size: 40px;
+    width: 1000px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+h1{
+    font-size: 40px;
+}
+
+span{
+    cursor: pointer;
+}
+
+.container{
+    width: 900px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.background{
+    height: 300px;
+    width: 900px;
+    margin: auto;
+    position: relative;
+    bottom: 0;
+    overflow: hidden;
+    text-align: center;
+    background: url(imgs/background.png);
+    background-repeat: repeat-x;
+    animation: bg-animation 600s infinite linear;
+    background-size: auto;
+}
+
+.darkmode .background{
+    background-image: url(imgs/background-dark-mode.png);
+}
+
+@keyframes bg-animation{
+    from{
+        background-position: 40000%;
+    }
+    to{
+        background-position: 0;
+    }
+}
+
+.start{
+    margin-top: 100px;
+}
+
+p{
+    margin-top:30px;
+    font-size:16px;
+}
+
+.character{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    
+    
+}
+
+.obstacle{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    
+    
+}
+
+h2{
+    font-size: 35px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+button{
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: #bdbdbd65;
+    color: black;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover{
+    background-color: #0000008a;
+    color: white;
+}
+
+.darkmode button{
+    background-color: #00000065;
+    color: white;
+}
+
+.darkmode button:hover{
+    background-color: #bdbdbd9a;
+    color: black;
+}
+
+footer{
+    background-color: #bdbdbd65;
+    height: 90px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+footer div{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+footer p{
+    font-size: 12px;
+    margin: 3px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #141414;
+}
+
+.darkmode a{
+    color: #fafafa;
+}
+
+.darkmode footer{
+    background-color: #bdbdbd28;
+}
