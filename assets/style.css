@@ -1,45 +1,51 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: #fafafa;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
     font-family: Arial;
+    justify-content: space-between;
+    height: 100vh;
 }
 
-.darkmode{
+.dark-mode {
     background-color: #141414;
     color: #fafafa;
 }
 
-nav{
+header {
     display: flex;
-    font-size: 40px;
-    width: 1000px;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 3rem;
+    width: 100%;
 }
 
-h1{
+.header__title {
     font-size: 40px;
 }
 
-span{
+.header__button {
+    font-size: 2.5rem;
     cursor: pointer;
 }
 
-.container{
+.container {
     width: 900px;
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.background{
+.background {
+    animation: bg-animation 600s infinite linear;
+    background: url(imgs/background.png);
+    background-repeat: repeat-x;
+    background-size: auto;
     height: 300px;
     width: 900px;
     margin: auto;
@@ -47,120 +53,107 @@ span{
     bottom: 0;
     overflow: hidden;
     text-align: center;
-    background: url(imgs/background.png);
-    background-repeat: repeat-x;
-    animation: bg-animation 600s infinite linear;
-    background-size: auto;
 }
 
-.darkmode .background{
+.dark-mode .background {
     background-image: url(imgs/background-dark-mode.png);
 }
 
-@keyframes bg-animation{
-    from{
+@keyframes bg-animation {
+    from {
         background-position: 40000%;
     }
-    to{
+
+    to {
         background-position: 0;
     }
 }
 
-.start{
+.start {
     margin-top: 100px;
 }
 
-p{
-    margin-top:30px;
-    font-size:16px;
+.start__instructions {
+    margin-top: 30px;
+    font-size: 16px;
 }
 
-.character{
+.character {
     width: 60px;
     height: 60px;
     position: absolute;
     bottom: 0;
-    
-    
 }
 
-.obstacle{
+.obstacle {
     width: 60px;
     height: 60px;
     position: absolute;
     bottom: 0px;
     right: 0px;
-    
-    
 }
 
-h2{
+.game-over__title {
     font-size: 35px;
     margin-top: 100px;
     margin-bottom: 10px;
 }
 
-button{
-    height: 40px;
-    width: 100px;
-    font-size: 20px;
-    border-radius: 20px;
+.start__button,
+.game-over__button {
     background-color: #bdbdbd65;
+    border: none;
+    border-radius: 20px;
     color: black;
     cursor: pointer;
-    border: none;
+    font-size: 1.5rem;
+    height: 50px;
+    width: 100px;
 }
 
-button:hover{
+.start__button:hover,
+.game-over__button:hover {
     background-color: #0000008a;
     color: white;
 }
 
-.darkmode button{
+.dark-mode .start__button,
+.dark-mode .game-over__button {
     background-color: #00000065;
     color: white;
 }
 
-.darkmode button:hover{
+.dark-mode .start__button:hover,
+.dark-mode .game-over__button:hover {
     background-color: #bdbdbd9a;
     color: black;
 }
 
-footer{
+footer {
     background-color: #bdbdbd65;
-    height: 70px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-}
-
-footer div{
-    margin-top: 25px;
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-footer p{
+    gap: 1.5rem;
+    height: 70px;
+    justify-content: center;
     font-size: 14px;
-    margin: 0 20px;
+    width: 100%;
 }
 
-footer a{
-    text-decoration: none;
+.dark-mode footer {
+    background-color: #bdbdbd28;
+}
+
+.footer__link {
     color: #141414;
-    font-size: 14px;
+    text-decoration: none;
 }
 
-footer a:hover{
+.footer__link:hover {
     font-size: 18px;
     transition: 0.3s linear;
 }
 
-.darkmode a{
+.dark-mode .footer__link {
     color: #fafafa;
-}
-
-.darkmode footer{
-    background-color: #bdbdbd28;
 }

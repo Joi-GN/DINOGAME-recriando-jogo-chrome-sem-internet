@@ -3,7 +3,7 @@ Projeto desenvolvido para o desafio Recriando o famoso jogo do dinossauro sem in
 
 Para o desenvolvimento do jogo foi utilizado HTML, CSS e JavaScript.  
 
-Com o JavaScript, também implementei a ferramenta de mudança da página para modo escuro ou claro.
+Com o JavaScript, também implementei a ferramenta de mudança da página para modo escuro ou claro, utilizando o método toggle da classList.
 
 ![](gif1.gif)
 

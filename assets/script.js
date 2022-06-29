@@ -94,7 +94,7 @@ function startGame() {
                 clearInterval(leftInterval);
                 clearTimeout(spawnObstacles);
 
-                background.innerHTML = '<h2> Game Over </h2><button onClick="window.location.reload();"><i class="fa-solid fa-arrow-rotate-left"></i></button>'
+                background.innerHTML = '<h2 class="game-over__title"> Game Over </h2><button class="game-over__button" onClick="window.location.reload();"><i class="fa-solid fa-arrow-rotate-left"></i></button>'
 
             } else {
                 obstaclePosition += 10;
@@ -109,6 +109,9 @@ function startGame() {
 
 }
 
+const changeModeBtn = document.getElementById('change-mode-btn');
+changeModeBtn.addEventListener('click', changeMode);
+
 function changeMode() {
-    body.classList.toggle("darkmode");
+    body.classList.toggle("dark-mode");
 }

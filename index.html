@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,32 +8,31 @@
     <link rel="shortcut icon" href="assets/imgs/dino.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/style.css">
     <script defer src="assets/script.js"></script>
-    
+
     <title>Dino Game</title>
 </head>
+
 <body>
-    <nav>
-        <h1>Dino Game</h1>
-        <span onclick="changeMode()"><i class="fa-solid fa-circle-half-stroke"></i></span>
-    </nav>
+    <header>
+        <h1 class="header__title">Dino Game</h1>
+        <i id="change-mode-btn" class="fa-solid fa-circle-half-stroke header__button"></i>
+    </header>
     <div class="container">
         <div class="background">
             <div class="start">
-                <button onclick="startGame()">
-                    <i class="fa-solid fa-play"></i></button>
-                <p>Pressione Espaço para pular</p>
+                <button class="start__button" onclick="startGame()"><i class="fa-solid fa-play"></i></button>
+                <p class="start__instructions">Pressione Espaço para pular</p>
             </div>
         </div>
-       
+
     </div>
     <footer>
-        <div>
-            <a href="https://www.linkedin.com/in/joice-gomes-dn/" target="_blank">LinkedIn</a>
-            <p>Desenvolvido por Joice Gomes | 2022</p>
-            <a href="https://github.com/Joi-GN" target="_blank">Github</a>
-        </div>
+        <a class="footer__link" href="https://www.linkedin.com/in/joice-gomes-dn/" target="_blank">LinkedIn</a>
+        <p class="footer__text">Desenvolvido por Joice Gomes | 2022</p>
+        <a class="footer__link" href="https://github.com/Joi-GN" target="_blank">Github</a>
     </footer>
     <audio src="assets/sound/jumpsound.wav" preload="auto" class="jumpsound"></audio>
     <script src="https://kit.fontawesome.com/9555ff22ed.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
